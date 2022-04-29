@@ -1,0 +1,135 @@
+* { 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+html {
+    background-image: linear-gradient(180deg, white, blue);
+    min-height: 100%;
+}
+
+body {
+    border: 0px solid white;
+    font-family: 'Square Peg', cursive;
+}
+
+header {
+    font-size: 3rem;
+    min-height: 15vh;
+    border: 0px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    min-height: 15vh;
+    border: 0px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input {
+    padding: 0.2rem;
+    border: 0px solid white;
+    min-width: 50vh;
+    font-size: 2rem;
+    background: white;
+}
+
+.addBtn {
+    padding: 0.2rem;
+    border: 1px solid blue;
+    min-width: 10vh;
+    font-size: 2rem;
+    color: blue;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.addBtn:hover {
+    color: white;
+    border: 1px solid white;
+    background: blue;
+}
+
+.container {
+    border: 0px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list {
+    min-width: 60vh;
+    border: 0px solid white;
+    list-style: none;
+}
+
+.todoDiv {
+    margin: 0.5rem;
+    border: 1px solid white;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+
+.todoDiv li {
+    flex: 1;
+}
+
+.todoText {
+    padding: 0rem 0.5rem;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.completeBtn {
+    background: green;
+    color: white;
+    border: 0px solid white;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.deleteBtn {
+    background: red;
+    color: white;
+    border: 0px solid white;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.animationFall {
+    transform: translateY(8rem) rotateZ(10deg);
+    opacity: 0;
+}
+
+.animationRaise {
+    transform: translateY(-2rem);
+    opacity: 0;
+}
+
+footer {
+    min-height: 10vh;
+    border: 0px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    color: white;
+}
+
+@media (max-width: 1200px) {
+    
+    .container {
+      flex-direction: column;
+    }
+  
+}
